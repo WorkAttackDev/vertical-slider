@@ -1,0 +1,46 @@
+/* Resets */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* styles */
+
+.slider-container {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+  overflow: hidden;
+  border: 5px solid;
+}
+
+.slider-items {
+    display: flex;
+    flex-direction: column;
+    transition: all .5s ease-out;
+    height: 80vh;
+}
+
+.slider-buttons {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-buttons button {
+    margin: .5rem;
+    padding: .5rem;
+    cursor: pointer;
+}
